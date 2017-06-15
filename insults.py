@@ -1,5 +1,6 @@
-# Many thanks to the New York Times for their list:
+# Trump Insults are pulled from a New York Times article:
 # https://www.nytimes.com/interactive/2016/01/28/upshot/donald-trump-twitter-insults.html
+# All of them should be things Trump himself has said about others.
 
 FIRST_TRUMPIAN_WORDS = [
     'fake',
@@ -41,7 +42,7 @@ THIRD_TRUMPIAN_WORDS = [
     'moron',
     'clown with zero credibility',
     'Bush plant',
-    'dumbest and worst candidates in the history of Republican politics',
+    'dumbest and worst candidate in the history of Republican politics',
     'weak candidate'
 ]
 

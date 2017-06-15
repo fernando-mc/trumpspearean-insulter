@@ -14,7 +14,7 @@ You're welcome to copy and redistribute any and all of this and setup steps are 
 
 ### Types of Insulter
 
-There are two versions of The Trumpspearean Insulter: **periodic** and **streaming* versions.
+There are two versions of The Trumpspearean Insulter: **periodic** and **streaming** versions.
 
 #### Periodic
 
