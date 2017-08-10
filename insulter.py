@@ -1,4 +1,3 @@
-import ConfigParser
 import insults
 import random
 
@@ -9,19 +8,19 @@ trump_words = [
     insults.FORTH_TRUMPIAN_ADDITIONS
 ]
 
-shakespear_words = [
+shakespeare_words = [
     insults.FIRST_SHAKESPEAREAN_WORDS,
     insults.SECOND_SHAKESPEAREAN_WORDS,
     insults.THIRD_SHAKESPEAREAN_WORDS
 ]
 
-word_types = [trump_words, shakespear_words]
+word_types = [trump_words, shakespeare_words]
 
 # Setup the Trumpian and Shakespearean insult words we're using
 # Combinations have three parts with a potential Trumpian addition. 
 # "first_word second_word third_word [forth_word]"
 
-def insulter(ins_type):
+def reply_generator(ins_type):
     """
     Creates an insult based on the insult type
     Insult types are: 
@@ -61,32 +60,3 @@ def insulter(ins_type):
         print 'Please check your config.ini file to make sure you have one of'
         print ' these set in the [settings] section'
     return insult
-
-def load_config(config_file):
-    """Read and load settings and credentials from config.ini"""
-    Config = ConfigParser.ConfigParser()
-    Config.read('./config.ini')
-    return {
-        'insult_type': Config.get('settings', 'insult_type'),
-        'run_type': Config.get('settings', 'run_type'),
-        'consumer_key': Config.get('credentials', 'consumer_key'),
-        'consumer_secret': Config.get('credentials', 'consumer_secret'),
-        'access_token_key': Config.get('credentials', 'access_token_key'),
-        'access_token_secret': Config.get('credentials', 'access_token_secret')
-    }
-
-def streaming_insulter():
-    
-
-def periodic_insulter():
-    insulter()
-
-
-acceptable_run_types = ['streaming', 'periodic']
-if run_type not in acceptable_run_types:
-
-
-
-
-
-
